@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clare的绘图音频小游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-message">
+        <h1 style="margin-bottom: 20px;">Clare的绘图音频小游戏</h1>
+        <p style="font-size: 1.2em;">正在加载自然之声...</p>
+        <p style="color: #888;">请耐心等待片刻 ✨</p>
+    </div>
+
+    <div id="app-content" style="display: none; flex-direction: column; align-items: center;">
+        <h1>Clare的绘图音频小游戏</h1>
+        <p class="creator">Created by Clare</p>
+        <p>选择一个颜色开始绘画，然后点击按钮聆听你的创作！</p>
+        <div id="controls">
+            <div id="color-brushes"></div>
+        </div>
+        <div id="canvas-container"></div>
+        <div class="button-group">
+            <button id="playSoundBtn">Turn Drawing Into Sound</button>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </div>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+</body>
+</html>
